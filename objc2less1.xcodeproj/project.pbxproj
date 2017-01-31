@@ -13,9 +13,12 @@
 		CE9AE0771E3FEE4B0053E775 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE0751E3FEE4B0053E775 /* Main.storyboard */; };
 		CE9AE0791E3FEE4B0053E775 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE0781E3FEE4B0053E775 /* Assets.xcassets */; };
 		CE9AE07C1E3FEE4B0053E775 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE9AE07A1E3FEE4B0053E775 /* LaunchScreen.storyboard */; };
+		D389B7244D511F3D5C98956F /* libPods-objc2less1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD403FEA181D9182828A96E7 /* libPods-objc2less1.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		469B68DEDE6E94940C401FC0 /* Pods-objc2less1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objc2less1.debug.xcconfig"; path = "Pods/Target Support Files/Pods-objc2less1/Pods-objc2less1.debug.xcconfig"; sourceTree = "<group>"; };
+		AE1C669EB8A3715D4F6B748A /* Pods-objc2less1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-objc2less1.release.xcconfig"; path = "Pods/Target Support Files/Pods-objc2less1/Pods-objc2less1.release.xcconfig"; sourceTree = "<group>"; };
 		CE9AE0691E3FEE4B0053E775 /* objc2less1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = objc2less1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE9AE06D1E3FEE4B0053E775 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CE9AE06F1E3FEE4B0053E775 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +29,7 @@
 		CE9AE0781E3FEE4B0053E775 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE9AE07B1E3FEE4B0053E775 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE9AE07D1E3FEE4B0053E775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD403FEA181D9182828A96E7 /* libPods-objc2less1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-objc2less1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D389B7244D511F3D5C98956F /* libPods-objc2less1.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE4AA8675795574F45F3FD3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				469B68DEDE6E94940C401FC0 /* Pods-objc2less1.debug.xcconfig */,
+				AE1C669EB8A3715D4F6B748A /* Pods-objc2less1.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8A4A0C9418BF24E52717DC7F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD403FEA181D9182828A96E7 /* libPods-objc2less1.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CE9AE0601E3FEE4B0053E775 = {
 			isa = PBXGroup;
 			children = (
 				CE9AE06B1E3FEE4B0053E775 /* objc2less1 */,
 				CE9AE06A1E3FEE4B0053E775 /* Products */,
+				0CE4AA8675795574F45F3FD3 /* Pods */,
+				8A4A0C9418BF24E52717DC7F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CE9AE0801E3FEE4B0053E775 /* Build configuration list for PBXNativeTarget "objc2less1" */;
 			buildPhases = (
+				6F128012EFA2475C2FA8861F /* [CP] Check Pods Manifest.lock */,
 				CE9AE0651E3FEE4B0053E775 /* Sources */,
 				CE9AE0661E3FEE4B0053E775 /* Frameworks */,
 				CE9AE0671E3FEE4B0053E775 /* Resources */,
+				777E03014522448AE4A087F1 /* [CP] Embed Pods Frameworks */,
+				53409633B00EB6A0F06828C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -144,6 +171,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		53409633B00EB6A0F06828C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-objc2less1/Pods-objc2less1-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F128012EFA2475C2FA8861F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		777E03014522448AE4A087F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-objc2less1/Pods-objc2less1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CE9AE0651E3FEE4B0053E775 /* Sources */ = {
@@ -270,6 +345,7 @@
 		};
 		CE9AE0811E3FEE4B0053E775 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 469B68DEDE6E94940C401FC0 /* Pods-objc2less1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = objc2less1/Info.plist;
@@ -282,6 +358,7 @@
 		};
 		CE9AE0821E3FEE4B0053E775 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE1C669EB8A3715D4F6B748A /* Pods-objc2less1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = objc2less1/Info.plist;
