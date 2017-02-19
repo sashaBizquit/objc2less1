@@ -1,0 +1,44 @@
+{
+  "toys": [
+    {
+      "name": "Ball",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Ball.png"
+    },
+    {
+      "name": "Balloon",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Balloon.png"
+    },
+    {
+      "name": "Bear",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Bear.png"
+    },
+    {
+      "name": "Bucket",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Bucket.png"
+    },
+    {
+      "name": "Fir",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Fir.png"
+    },
+    {
+      "name": "Mushroom",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Mushroom.png"
+    },
+    {
+      "name": "Pyramid",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Pyramid.png"
+    },
+    {
+      "name": "Snowman",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Snowman.png"
+    },
+    {
+      "name": "Tree",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Tree.png"
+    },
+    {
+      "name": "Tumbler",
+      "url": "https://raw.githubusercontent.com/sashaBizquit/objc2less1/master/Tumbler.png"
+    }
+  ]
+}
